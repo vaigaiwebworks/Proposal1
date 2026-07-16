@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Rahul ❤️ Nivethra</title>
+    <!-- Google Fonts for romantic script and modern UI typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Canvas for floating heart particles & confetti rain -->
+    <canvas id="heartCanvas" class="background-canvas"></canvas>
+    <canvas id="confettiCanvas" class="celebration-canvas"></canvas>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- The Proposal Glassmorphic Card -->
+        <div id="proposalCard" class="card">
+            <div id="cardContent" class="card-body active">
+                <div class="heart-pulse-container">
+                    <div class="heart-pulse-icon">❤️</div>
+                </div>
+                <h1 class="proposal-title">Rahul ❤️ Nivethra</h1>
+                <p class="proposal-question">Will you Marry Me?</p>
+                <div class="button-group">
+                    <button id="yesBtn" class="btn btn-yes">YES ❤️</button>
+                    <button id="noBtn" class="btn btn-no">NO 🙈</button>
+                </div>
+            </div>
+
+            <!-- The Success Celebration Content (Hidden Initially) -->
+            <div id="successContent" class="card-body hidden">
+                <div class="celebration-header">
+                    <h2 class="celebration-title">Forever & Always! 💖</h2>
+                </div>
+                <div class="teddy-container">
+                    <!-- Custom generated illustration -->
+                    <img src="assets/kissing_teddies.png" alt="Kissing Teddies" class="teddy-img">
+                </div>
+                <p class="success-message">You made Rahul the happiest person!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Toast Notification for runaway NO button alerts -->
+    <div id="mobileToast" class="toast">You can't ecape from me</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
